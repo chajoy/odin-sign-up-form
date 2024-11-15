@@ -10,6 +10,13 @@
 
 body {
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/joel-filipe-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    font-family: "Faculty Glyphic", sans-serif;
 }
 
 img,
@@ -49,4 +56,53 @@ h4,
 h5,
 h6 {
     text-wrap: balance;
+}
+
+.container {
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* sidebar */
+.sideBar {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    flex: 1;
+}
+
+.title {
+    position: relative;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 20%;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.odin-logo {
+    height: 100%;
+}
+
+.title h1 {
+    font-size: clamp(1rem, calc(3rem + 1vh), 5rem);
+    color: white;
+}
+
+/* main container */
+main {
+    background-color: #eeeeee;
+    flex: 2;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.formContainer {
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
