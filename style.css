@@ -13,10 +13,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: url("img/joel-filipe-unsplash.jpg");
     background-size: cover;
     height: 100vh;
     font-family: "Roboto", sans-serif;
+    user-select: none;
 }
 
 img,
@@ -82,7 +84,6 @@ h6 {
     gap: 20px;
     height: 20%;
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.2);
     font-family: "Faculty Glyphic", sans-serif;
 }
 
@@ -99,8 +100,9 @@ h6 {
 main {
     background-color: #eeeeee;
     flex: 2;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-upper {
