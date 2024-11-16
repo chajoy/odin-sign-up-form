@@ -35,33 +35,31 @@
                     <h1>Let's do this!</h1>
 
                     <div>
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="fname" required>
+                        <img src="img/person-fill.svg" alt="user-icon" class="form-icon">
+                        <input type="text" id="fname" name="fname" required autocomplete="off"
+                            placeholder="Enter First Name">
                     </div>
 
                     <div>
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="lname" required>
+                        <input type="text" id="lname" name="lname" required autocomplete="off"
+                            placeholder="Enter Last Name">
+                    </div>
+
+                    <div class="email">
+                        <img src="img/email.svg" alt="at-icon" class="form-icon">
+                        <input type="text" id="email" name="email" required autocomplete="off"
+                            placeholder="Enter Email">
                     </div>
 
                     <div>
-                        <label for="email">EMAIL</label>
-                        <input type="text" id="email" name="email" required>
+                        <img src="img/key-fill.svg" alt="key-icon" class="form-icon">
+                        <input type="password" id="pass" name="pass" required autocomplete="off"
+                            placeholder="Create Password">
                     </div>
 
                     <div>
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
-                    </div>
-
-                    <div>
-                        <label for="pass">PASSWORD</label>
-                        <input type="password" id="pass" name="pass" required>
-                    </div>
-
-                    <div>
-                        <label for="confirmpass">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmpass" name="confirmpass" required>
+                        <input type="password" id="confirmpass" name="confirmpass" required autocomplete="off"
+                            placeholder="Confirm Password">
                     </div>
 
                 </form>
