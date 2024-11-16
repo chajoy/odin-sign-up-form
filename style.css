@@ -73,11 +73,14 @@ h6 {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
     flex: 1;
+    position: relative;
 }
 
 .title {
-    position: relative;
-    top: 20%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,11 +91,11 @@ h6 {
 }
 
 .odin-logo {
-    height: 50%;
+    height: 80px;
 }
 
 .title h1 {
-    font-size: clamp(1rem, calc(3rem + 1vh), 5rem);
+    font-size: 80px;
     color: white;
 }
 
@@ -151,9 +154,8 @@ main {
     padding: 10px 40px;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.38);
-    transition: filter .5s ease-in;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .main-lower button:hover {
