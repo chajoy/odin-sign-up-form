@@ -37,29 +37,29 @@
                     <div>
                         <img src="img/person-fill.svg" alt="user-icon" class="form-icon">
                         <input type="text" id="fname" name="fname" required autocomplete="off"
-                            placeholder="Enter First Name">
+                            placeholder="Enter First Name" pattern="[a-zA-Z]+">
                     </div>
 
                     <div>
                         <input type="text" id="lname" name="lname" required autocomplete="off"
-                            placeholder="Enter Last Name">
+                            placeholder="Enter Last Name" pattern="[a-zA-Z]+">
                     </div>
 
                     <div class="email">
                         <img src="img/email.svg" alt="at-icon" class="form-icon">
-                        <input type="text" id="email" name="email" required autocomplete="off"
-                            placeholder="Enter Email">
+                        <input type="email" id="email" name="email" required autocomplete="off"
+                            placeholder="Enter Email" pattern="[a-z0-9._%+\-]+@[a-z0-9._%+\-]+\.[a-z]{2,}$">
                     </div>
 
                     <div>
                         <img src="img/key-fill.svg" alt="key-icon" class="form-icon">
                         <input type="password" id="pass" name="pass" required autocomplete="off"
-                            placeholder="Create Password">
+                            placeholder="Create Password" minlength="10" maxlength="20">
                     </div>
 
                     <div>
                         <input type="password" id="confirmpass" name="confirmpass" required autocomplete="off"
-                            placeholder="Confirm Password">
+                            placeholder="Confirm Password" minlength="10" maxlength="20">
                     </div>
 
                 </form>
