@@ -159,11 +159,11 @@ main {
     outline: 2px solid var(--purple);
 }
 
-.sign-up input:valid {
+.sign-up input.valid {
     outline: 2px solid rgb(74, 152, 74);
 }
 
-.sign-up input:focus:invalid {
+.sign-up input.invalid {
     outline: 2px solid rgb(238, 88, 88);
 }
 
