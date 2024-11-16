@@ -110,10 +110,12 @@ main {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-y: auto;
 }
 
 .main-upper {
+    margin-top: 10%;
     padding: 40px;
     display: flex;
     flex-direction: column;
